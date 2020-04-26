@@ -20,5 +20,5 @@
       "src": ["src"]
     }
   },
-  "exclude": ["node_modules", "dist", "config", "./example", "./*.js"]
+  "exclude": ["node_modules", "dist/*", "config/*", "example/*", "**/*.js"]
 }
