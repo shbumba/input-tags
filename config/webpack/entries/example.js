@@ -18,7 +18,7 @@ const config = {
   output: {
     path: path.join(process.cwd(), 'example'),
     filename: '[name].[hash].js',
-    publicPath: '/',
+    publicPath: './',
   },
   plugins: [
     new CleanWebpackPlugin(),
