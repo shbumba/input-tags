@@ -1,8 +1,8 @@
 # input-tags
+[about](https://shbumba.github.io/input-tags/) | [demo](https://shbumba.github.io/input-tags/example/index.html)
 ![Image of input-tags](https://github.com/shbumba/input-tags/raw/master/demo.png)
 
-## Demo ##
-[demo page](https://shbumba.github.io/input-tags/example/index.html)
+## About ##
 
 This library implements the functionality to enter tags into a regular text field.
 ### How to use? ###
