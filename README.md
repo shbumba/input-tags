@@ -1,5 +1,9 @@
-![Image of input-tags](https://github.com/shbumba/input-tags/raw/master/demo.png)
 # input-tags
+![Image of input-tags](https://github.com/shbumba/input-tags/raw/master/demo.png)
+
+## Demo ##
+[demo page](https://shbumba.github.io/input-tags/example/index.html)
+
 This library implements the functionality to enter tags into a regular text field.
 ### How to use? ###
 Connect the input-tags library to your page.

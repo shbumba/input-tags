@@ -26,6 +26,13 @@ const config = {
       title: process.env.WIDGET_TITLE,
       template: 'src/example/index.html',
       filename: 'index.html',
+      minify: {
+        removeEmptyAttributes: false,
+        removeOptionalTags: false,
+        removeRedundantAttributes: false,
+        removeScriptTypeAttributes: false,
+        trimCustomFragments: false,
+      },
     }),
   ],
 }

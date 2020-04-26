@@ -14,7 +14,14 @@ const styleLoader = isDevelopment
 export default [
   {
     test: /\.html$/i,
-    use: ['html-loader'],
+    use: [
+      {
+        loader: 'html-loader',
+        options: {
+          minimize: false,
+        },
+      },
+    ],
   },
   {
     test: /\.ts$/,
