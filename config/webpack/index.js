@@ -32,23 +32,6 @@ const entriesConfig = [entry, example].map(entry =>
       disableHostCheck: true,
       historyApiFallback: true,
     },
-    optimization: {
-      splitChunks: {
-        chunks: 'all',
-        cacheGroups: {
-          default: false,
-          vendors: false,
-          common: {
-            name: 'common',
-            minChunks: 2,
-            chunks: 'all',
-            priority: 10,
-            reuseExistingChunk: true,
-            enforce: true,
-          },
-        },
-      },
-    },
   }),
 )
 

@@ -8,13 +8,15 @@ import { CleanWebpackPlugin } from 'clean-webpack-plugin'
 /** @type {Configuration} */
 const config = {
   name: 'example',
-  entry: [
-    'core-js/modules/es.promise',
-    'core-js/modules/es.array.iterator',
-    'core-js/modules/es.object.entries',
-    'regenerator-runtime/runtime',
-    './src/example/index.ts',
-  ],
+  entry: {
+    'input-tag': [
+      'core-js/modules/es.promise',
+      'core-js/modules/es.array.iterator',
+      'core-js/modules/es.object.entries',
+      './src/index.ts',
+    ],
+    example: ['regenerator-runtime/runtime', './src/example/index.ts'],
+  },
   output: {
     path: path.join(process.cwd(), 'example'),
     filename: '[name].[hash].js',

@@ -5,7 +5,6 @@ import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 
 const env = process.env.NODE_ENV
-const isProduction = env === 'production'
 const isDevelopment = env === 'development'
 
 /** @type {Plugin[]} */
