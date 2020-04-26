@@ -2,6 +2,7 @@
   "name": "input-tags",
   "version": "0.0.1",
   "author": "Vitaly Fomin",
+  "license": "MIT",
   "keywords": [
     "tags",
     "script"
@@ -18,13 +19,11 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": [
-      "npx eslint --fix",
-      "git add"
+    "*.{js,ts}": [
+      "npx eslint --fix"
     ],
-    "*.{css,json,js,ts,tsx}": [
-      "npx prettier --write",
-      "git add"
+    "*.{css,json,js,ts}": [
+      "npx prettier --write"
     ]
   },
   "dependencies": {
