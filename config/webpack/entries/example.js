@@ -15,7 +15,11 @@ const config = {
       'core-js/modules/es.object.entries',
       './src/index.ts',
     ],
-    example: ['regenerator-runtime/runtime', './src/example/index.ts'],
+    example: [
+      'regenerator-runtime/runtime',
+      'core-js/modules/es.array.iterator',
+      './src/example/index.ts',
+    ],
   },
   output: {
     path: path.join(process.cwd(), 'example'),

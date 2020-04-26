@@ -5,9 +5,6 @@ module.exports = {
       {
         corejs: '3.6',
         useBuiltIns: 'entry',
-        targets: {
-          ie: '11',
-        },
       },
     ],
     '@babel/preset-typescript',
