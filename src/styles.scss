@@ -1,0 +1,136 @@
+.input-tags {
+  display: flex;
+  position: relative;
+  margin: 25px 0 10px;
+  background: white;
+  border: 1px solid #c3c2ce;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  &__base-input {
+    display: none;
+  }
+
+  &__error {
+    display: none;
+    width: calc(100% + 14px);
+    height: calc(100% + 14px);
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    border: 1px dashed #c83b33;
+    border-radius: 5px;
+    pointer-events: none;
+
+    &--show {
+      display: block;
+    }
+
+    &-message {
+      position: absolute;
+      padding: 0px 6px 5px;
+      bottom: 100%;
+      font-size: 12px;
+      line-height: 1.1;
+      letter-spacing: 0.25pt;
+      color: #c83b33;
+    }
+  }
+
+  &__scroll {
+    overflow: auto;
+    max-height: 100%;
+  }
+
+  &__controls {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 5px;
+  }
+
+  &__input {
+    display: flex;
+    max-width: 100%;
+    min-width: 100px;
+    flex-grow: 1;
+    padding: 0 10px 0 5px;
+
+    input {
+      width: 100%;
+      border: none;
+      padding: 2px 0;
+      margin: 0;
+
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
+    }
+  }
+
+  &__tag {
+    display: flex;
+    align-items: center;
+    margin: 2px 3px 2px 1px;
+    background: #e2ebfd;
+    border-radius: 20px;
+    line-height: 1.1;
+    white-space: nowrap;
+
+    &-content {
+      font-size: 15px;
+      padding: 4px 0px 4px 11px;
+    }
+
+    &-close {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 100%;
+      position: relative;
+      cursor: pointer;
+
+      &:after {
+        content: '+';
+        display: block;
+        line-height: 1;
+        transform: rotate(45deg);
+        font-family: monospace;
+        font-size: 20px;
+      }
+    }
+
+    &--invalid {
+      background: transparent;
+      position: relative;
+      margin-left: 7px;
+      margin-right: 4px;
+
+      &:after {
+        content: '';
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-bottom: 1px dashed #c83b33;
+      }
+    }
+
+    &--invalid & {
+      &-content {
+        font-size: 15px;
+        padding-left: 0px;
+      }
+
+      &-close {
+        width: 18px;
+        justify-content: flex-end;
+      }
+    }
+  }
+}

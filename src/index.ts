@@ -1,3 +1,5 @@
-import styles from 'src/styles.css'
+'use strict'
 
-console.log({ styles })
+import InputTags from './lib/InputTags'
+
+;(window as any).InputTags = InputTags

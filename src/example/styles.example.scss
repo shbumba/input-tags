@@ -1,0 +1,75 @@
+@import '~sanitize.css';
+@import '~sanitize.css/forms.css';
+@import '~sanitize.css/typography.css';
+
+h2 {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0 0 2px;
+  line-height: 1.1;
+
+  b {
+    font-size: 21px;
+  }
+}
+
+button {
+  background-color: #4666f6;
+  padding: 12px 16px;
+  line-height: 1.1;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  user-select: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+
+  &:active {
+    box-shadow: none;
+    outline: none;
+    opacity: 1;
+    box-shadow: inset 0px 1px 4px -1px #000000;
+  }
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  box-shadow: 0px 6px 14px -5px #4c4848;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 540px;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    background: #f8f8f7;
+    padding: 34px 50px 20px;
+  }
+
+  &__size {
+    max-height: 300px;
+    display: flex;
+  }
+
+  &__footer {
+    background: white;
+    padding: 24px 50px 32px;
+
+    * + * {
+      margin-left: 10px;
+    }
+  }
+}
